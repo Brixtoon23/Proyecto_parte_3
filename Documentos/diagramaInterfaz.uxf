@@ -1,0 +1,1246 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <help_text>Space for diagram notes </help_text>
+  <zoom_level>2</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>752</x>
+      <y>352</y>
+      <w>48</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>VentanaOperador
+--
+- panelN: JPanel
+- panelC: JPanel
+- btnHistoriaArtista: JButton
+- btnHistoriaPieza: JButton
+- btnSalir: JButton
+- galeria: Galeria
+--
++ VentanaOperador()
++ actionPerformed (e: ActionEvent): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>750</x>
+      <y>398</y>
+      <w>48</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>VentanaCajero
+--
+- btnHistorialAutor: JButton
+- btnHistorialPieza: JButton
+- btnPago: JButton
+- btnSalir: JButton
+- lblTitulo: JLabel
+- galeria: Galeria
+--
++ VentanaCajero()
++ actionPerformed (e: ActionEvent): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>748</x>
+      <y>442</y>
+      <w>54</w>
+      <h>46</h>
+    </coordinates>
+    <panel_attributes>VentanaPropietario
+--
+- btnHistoriaArtist: JButton
+- btnHistoriaPieza: JButton
+- btnMisPiezas: JButton
+- btnHistorialPiezas: JButton
+- btnSalir: JButton
+- lblTitulo: JLabel
+- panelN: JPanel
+- panelC: JPanel
+- galeria: Galeria
+--
++ VentanaPropietario(propietario:Propietario)
++ actionPerformed (e: ActionEvent): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>874</x>
+      <y>282</y>
+      <w>50</w>
+      <h>122</h>
+    </coordinates>
+    <panel_attributes>VentanaHistorialArtista
+--
+- organizadorE: JPanel
+- organizadorW: JPanel
+- organizadorC: JPanel
+- detallesVenta: JPanel
+- btnVolver: JButton
+- ventanaAnterior: String
+- titulo: JLabel
+- txtNombreArtist: JTextField
+- lblIngreseNombre: JLabel
+- btnBuscar: JButton
+- lblTituloPieza: JLabel
+- lblFechaCreacion: JLabel
+- lblValor: JLabel
+- lblFechaCompra: JLabel
+- imagenPieza: JLabel
+- lblNoEncontro: JLabel
+- lblNoEncontroInfoVenta: JLabel
+- txtTituloPieza: JTextField
+- txtFechaCreacion: JTextField
+- txtValor: JTextField
+- txtFechaCompra: JTextField
+- btnPrimera: JButton
+- btnAnterior: JButton
+- btnSiguiente: JButton
+- btnUltima: JButton
+- posHistorial: int
+- piezaDesplegar: Pieza
+- autor: String
+- galeria: Galeria
+- propietario: Propietario
+--
++ VentanaHistorialArtista()
++ actionPerformed (e: ActionEvent): void
++ desplegarInfoPieza(): void
++ cambioPieza(): void
++ actualizarInfo(accion:String): void
++ setVentanaAnterior(anterior:String): void
++ setGaleria(g:Galeria): void
++ setPropietario (p:Propietario): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>872</x>
+      <y>408</y>
+      <w>54</w>
+      <h>134</h>
+    </coordinates>
+    <panel_attributes>VentanaHistorialPieza
+--
+- organizadorE: JPanel
+- organizadorW: JPanel
+- organizadorC: JPanel
+- detallesVenta: JPanel
+- btnVolver: JButton
+- ventanaAnterior: String
+- titulo: JLabel
+- txtNombreArtist: JTextField
+- lblIngreseNombre: JLabel
+- btnBuscar: JButton
+- lblTituloPieza: JLabel
+- lblFechaCreacion: JLabel
+- lblValor: JLabel
+- lblFechaCompra: JLabel
+- imagenPieza: JLabel
+- lblNoEncontro: JLabel
+- lblNoEncontroInfoVenta: JLabel
+- lblPropietario: JLabel
+- txtTituloPieza: JTextField
+- txtFechaCreacion: JTextField
+- txtValor: JTextField
+- txtFechaCompra: JTextField
+- txtPropietario: JTextField
+- btnPrimera: JButton
+- btnAnterior: JButton
+- btnSiguiente: JButton
+- btnUltima: JButton
+- posHistorial: int
+- piezaDesplegar: Pieza
+- autor: String
+- galeria: Galeria
+- propietario: Propietario
+--
++ VentanaHistorialPieza()
++ actionPerformed (e: ActionEvent): void
++ desplegarInfoPiezaEncontrada(): void
++ actualizarInfo(accion:String): void
++ setVentanaAnterior(anterior:String): void
++ setGaleria(g:Galeria): void
++ setPropieatrio(p:Propietario): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>620</x>
+      <y>554</y>
+      <w>84</w>
+      <h>94</h>
+    </coordinates>
+    <panel_attributes>VentanaPiezasActuales
+--
+- titulo: JLabel
+- imagenPieza: JLabel
+- lblTituloPieza: JLabel
+- lblAutor: JLabel
+- lblAnioCreacion: JLabel
+- lblValorCompra: JLabel
+- lblFechaCompra: JLabel
+- txtTituloPieza: JTextField
+- txtAutor: JTextField
+- txtAnioCreacion: JTextField
+- txtValorCompra: JTextField
+- txtFechaCompra: JTextField
+- btnPrimera: JButton
+- btnAnterior: JButton
+- btnSiguiente: JButton
+- btnUltima: JButton
+- btnVolver: JButton
+- pnlSur: JPanel
+- pnlCentro: JPanel
+- lblHistorialVacio: JLabel
+- propietario: Propietario
+- galeria: Galeria
+- piezaDesplegar: Pieza
+- posHistorial: int
+--
++ VentanaPiezasActuales(propietario:Propietario, galeria:Galeria)
++ actionPerformed (e: ActionEvent): void
++ cambiarInfo(pos: int): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>618</x>
+      <y>440</y>
+      <w>86</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>VentanaPiezasPasadas
+--
+- titulo: JLabel
+- imagenPieza: JLabel
+- lblTituloPieza: JLabel
+- lblAutor: JLabel
+- lblAnioCreacion: JLabel
+- lblValorCompra: JLabel
+- lblFechaCompra: JLabel
+- lblPropietarioActual: JLabel
+- txtTituloPieza: JTextField
+- txtAutor: JTextField
+- txtAnioCreacion: JTextField
+- txtValorCompra: JTextField
+- txtFechaCompra: JTextField
+- txtPropietarioActual: JTextField
+- btnPrimera: JButton
+- btnAnterior: JButton
+- btnSiguiente: JButton
+- btnUltima: JButton
+- btnVolver: JButton
+- pnlSur: JPanel
+- pnlCentro: JPanel
+- lblHistorialVacio: JLabel
+- propietario: Propietario
+- galeria: Galeria
+- piezaDesplegar: Pieza
+- posHistorial: int
+--
++ VentanaPiezasPasadas(propietario:Propietario, galeria:Galeria)
++ actionPerformed (e: ActionEvent): void
++ cambiarInfo(pos: int): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1016</x>
+      <y>422</y>
+      <w>46</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+genera una nueva instancia</panel_attributes>
+    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>702</x>
+      <y>486</y>
+      <w>112</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=.
+genera una nueva instancia</panel_attributes>
+    <additional_attributes>370.0;10.0;370.0;420.0;10.0;420.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>750</x>
+      <y>286</y>
+      <w>58</w>
+      <h>58</h>
+    </coordinates>
+    <panel_attributes>VentanaAdministrador
+--
+- panelN: JPanel
+- panelC: JPanel
+- CrearSubasta: JPanel
+- CargarPieza: JPanel
+- HistorialComprador: JPanel
+- btnHistoriaArtista: JButton
+- btnCrearSubasta: JButton
+- btnCargarPieza: JButton
+- btnHistorialComprador: JButton
+- btnHistoriaPieza: JButton
+- btnSalir: JButton
+- galeria: Galeria
+--
++ VentanaAdministrador()
+- crearBoton(texto:String): JButton
+- agregarBotonConEspacio(boton: JButton ):void
++ actionPerformed (e: ActionEvent): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>960</x>
+      <y>368</y>
+      <w>58</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>VentanaComprador
+--
+- panelN: JPanel
+- panelC: JPanel
+- PiezasSubasta: JPanel
+- PiezasPrecioFijo: JPanel
+- HacerOferta: JPanel
+- ComprasAprobadas: JPanel
+- CompraPrecioFijo: JPanel
+- btnHistoriaArtista: JButton
+- btnPiezasSubasta: JButton
+- btnPiezasPrecioFijo: JButton
+- btnHacerOferta: JButton
+- btnComprasAprobadas: JButton
+- btnHistoriaPieza: JButton
+- btnCompraPrecioFijo: JButton
+- btnSalir: JButton
+- galeria: Galeria
+--
++ VentanaComprador()
+- crearBoton(texto:String): JButton
+- agregarBotonConEspacio(boton: JButton ):void
++ actionPerformed (e: ActionEvent): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1058</x>
+      <y>416</y>
+      <w>58</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>VentanaHacerOferta
+--
+- galeria: Galeria
+- nombrePiezaField: JTextField
+- valorOfertadoField: JTextField
+- metodoPagoField: JTextField
+- fechaField: JTextField
+- LoginField: JTextField
+--
++ VentanaHacerOferta()
++ actionPerformed (e: ActionEvent): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1060</x>
+      <y>312</y>
+      <w>58</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>VentanaMensajes
+--
+- galeria:Galeria
+- loginField: JTextField
+- mensajesArea: JTextArea
+--
++ VentanaMensajes()
++ actionPerformed (e: ActionEvent): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1060</x>
+      <y>346</y>
+      <w>58</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>VentanaPiezasPrecioFijo
+--
+- piezas: List&lt;Pieza&gt;
+- indiceActual: int
+- tituloLabel: JLabel
+- propietarioLabel: JLabel
+- anioLabel: JLabel
+- lugarLabel: JLabel
+- precioLabel: JLabel
+- tipoLabel: JLabel
+- fotoLabel: JLabel
+- anteriorButton: JButton
+- siguienteButton: JButton
+- volverButton:JButton
+- galeria: Galeria
+--
++ VentanaPiezasPrecioFijo()
++ actionPerformed (e: ActionEvent): void
++ actualizarPieza(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1058</x>
+      <y>458</y>
+      <w>58</w>
+      <h>58</h>
+    </coordinates>
+    <panel_attributes>VentanaPiezasSubasta
+--
+- piezas: List&lt;Pieza&gt;
+- indiceActual: int
+- tituloLabel: JLabel
+- propietarioLabel: JLabel
+- anioLabel: JLabel
+- lugarLabel: JLabel
+- precioLabel: JLabel
+- tipoLabel: JLabel
+- fotoLabel: JLabel
+- anteriorButton: JButton
+- siguienteButton: JButton
+- volverButton:JButton
+- galeria: Galeria
+--
++ VentanaPiezasSubasta()
++ actionPerformed (e: ActionEvent): void
++ actualizarPieza(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>654</x>
+      <y>288</y>
+      <w>58</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>VentanaCargarPieza
+--
+- panelC: JPanel
+- Fotografia: JPanel
+- Video: JPanel
+- Pintura: JPanel
+- Escultura: JPanel
+- btnFotografia: JButton
+- btnVideo: JButton
+- btnPintura: JButton
+- btnEscultura: JButton
+- galeria: Galeria
+--
++ VentanaCargarPieza()
++ actionPerformed (e: ActionEvent): void
+- crearBoton(texto:String): JButton
+- agregarBotonConEspacio(boton: JButton ):void
++ actualizarPieza(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>702</x>
+      <y>462</y>
+      <w>50</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=.
+genera una nueva instancia</panel_attributes>
+    <additional_attributes>230.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>710</x>
+      <y>310</y>
+      <w>44</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+genera una nueva instancia</panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>832</x>
+      <y>362</y>
+      <w>46</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+genera una nueva instancia</panel_attributes>
+    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>800</x>
+      <y>456</y>
+      <w>80</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+genera una nueva instancia</panel_attributes>
+    <additional_attributes>10.0;20.0;380.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>806</x>
+      <y>304</y>
+      <w>32</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;10.0;140.0;310.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>798</x>
+      <y>362</y>
+      <w>40</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>800</x>
+      <y>364</y>
+      <w>36</w>
+      <h>86</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>10.0;410.0;160.0;410.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>796</x>
+      <y>364</y>
+      <w>34</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>10.0;250.0;150.0;250.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>796</x>
+      <y>416</y>
+      <w>54</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;250.0;20.0;250.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>868</x>
+      <y>324</y>
+      <w>6</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;680.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>798</x>
+      <y>354</y>
+      <w>76</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;360.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>806</x>
+      <y>322</y>
+      <w>68</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>922</x>
+      <y>384</y>
+      <w>42</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+genera una nueva instancia</panel_attributes>
+    <additional_attributes>10.0;20.0;190.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>924</x>
+      <y>412</y>
+      <w>40</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+genera una nueva instancia</panel_attributes>
+    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>996</x>
+      <y>438</y>
+      <w>66</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+genera una nueva instancia</panel_attributes>
+    <additional_attributes>50.0;10.0;50.0;190.0;310.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1016</x>
+      <y>380</y>
+      <w>48</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+genera una nueva instancia</panel_attributes>
+    <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>990</x>
+      <y>320</y>
+      <w>74</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+genera una nueva instancia</panel_attributes>
+    <additional_attributes>50.0;240.0;50.0;20.0;350.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1084</x>
+      <y>584</y>
+      <w>58</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>VentanaBancolombia
+--
+- usuarioField: JTextField
+- claveField: JPasswordField
+- csvField: JTextField
+- pagarButton: JButton
+- resultadoLabel: JLabel
+--
++ VentanaBancolombia()
++ actionPerformed (e: ActionEvent): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1084</x>
+      <y>630</y>
+      <w>58</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>VentanaDavivienda
+--
+- usuarioField: JTextField
+- claveField: JPasswordField
+- csvField: JTextField
+- pagarButton: JButton
+- resultadoLabel: JLabel
+--
++ VentanaBancolombia()
++ actionPerformed (e: ActionEvent): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>974</x>
+      <y>604</y>
+      <w>58</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>VentanaPayU
+--
+- pagarDaviviendaButton: JButton
+- pagarBancolombiaButton: JButton
+- salirButton: JButton
+--
++ VentanaPayU()
++ actionPerformed (e: ActionEvent): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>972</x>
+      <y>534</y>
+      <w>30</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0;130.0;100.0;130.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1066</x>
+      <y>594</y>
+      <w>22</w>
+      <h>58</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0;10.0;270.0;90.0;270.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1030</x>
+      <y>614</y>
+      <w>42</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+redirige al usuario según
+la opción seleccionada</panel_attributes>
+    <additional_attributes>10.0;20.0;190.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>538</x>
+      <y>262</y>
+      <w>58</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>VentanaVideo
+--
+
+--
++ VentanaVideo()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>538</x>
+      <y>290</y>
+      <w>58</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>VentanaEscultura
+--
+
+--
++ VentanaEscultura()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>538</x>
+      <y>320</y>
+      <w>58</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>VentanaPintura
+--
+
+--
++ VentanaPintura()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>536</x>
+      <y>348</y>
+      <w>58</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>VentanaFotografia
+--
+
+--
++ VentanaFotografia()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>608</x>
+      <y>310</y>
+      <w>50</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+genera una nueva instancia</panel_attributes>
+    <additional_attributes>10.0;20.0;230.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>592</x>
+      <y>270</y>
+      <w>22</w>
+      <h>94</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>20.0;10.0;90.0;10.0;90.0;450.0;10.0;450.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>324</y>
+      <w>20</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;80.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>296</y>
+      <w>20</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;80.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>974</x>
+      <y>636</y>
+      <w>58</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>VentanaPSE
+--
+- pagarDaviviendaButton: JButton
+- pagarBancolombiaButton: JButton
+- salirButton: JButton
+--
++ VentanaPayU()
++ actionPerformed (e: ActionEvent): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1030</x>
+      <y>646</y>
+      <w>42</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+redirige al usuario según
+la opción seleccionada</panel_attributes>
+    <additional_attributes>10.0;20.0;190.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1066</x>
+      <y>646</y>
+      <w>22</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;90.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>864</x>
+      <y>182</y>
+      <w>52</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>VentanaPrincipal
+--
+- JLabel lblTitulo;
+- JLabel lblIniciarSesion;
+- JLabel lblUsuario;
+- JLabel lblContrasenia;
+- JLabel lblNoEstaRegistrado;
+- JTextField txtUsuario;
+- JTextField txtContrasenia;
+- JButton btnIngresar;
+- JButton btnRegistrarse;
+- Galeria galeria;
+--
++ actionPerformed(ActionEvent e): void
++ inicioSesion(): void
++ VentanaPrincipal() : void
+    </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>654</x>
+      <y>224</y>
+      <w>52</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>VentanaCrearSubasta
+--
+- Galeria galeria;
+- JTextField txtID;
+- JTextField txtPiezas;
+- JButton btnCrearSubasta;
+- JButton btnVolver;
+--
++ VentanaCrearSubasta(): void
++ actionPerformed(ActionEvent e): void
+
+    </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>952</x>
+      <y>488</y>
+      <w>52</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>VentanaMetodosPago
+--
+- JPanel panelC;
+- JPanel Efectivo;
+- JPanel Tarjeta;
+- JPanel Transferencia;
+
+- JButton btnEfectivo;
+- JButton btnTarjeta;
+- JButton btnTransferencia;
+- JButton btnVolver;
+- Galeria galeria;
+--
++ VentanaMetodosPago(): void
++ actionPerformed(ActionEvent e) : void
+    </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>568</y>
+      <w>52</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>VentanaCompraEfectivoPrecioFijo
+--
+- JTextField loginField;
+- JTextField nombrePiezaField;
+- JTextField fechaField;
+- JButton btnComprar;
+- JButton btnVolver;
+- Galeria galeria;
+--
++  actionPerformed(ActionEvent e): void
++  realizarCompra() : void
+    </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>964</x>
+      <y>566</y>
+      <w>204</w>
+      <h>116</h>
+    </coordinates>
+    <panel_attributes>Pasarelas
+--
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>976</x>
+      <y>438</y>
+      <w>6</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>678</x>
+      <y>270</y>
+      <w>6</w>
+      <h>22</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>922</x>
+      <y>534</y>
+      <w>46</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>210.0;10.0;210.0;110.0;10.0;110.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>840</x>
+      <y>214</y>
+      <w>28</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>938</x>
+      <y>184</y>
+      <w>42</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>VentanaCajero
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>800</x>
+      <y>186</y>
+      <w>42</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>VentanaOperador
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>870</x>
+      <y>154</y>
+      <w>42</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>VentanaComprador
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>938</x>
+      <y>212</y>
+      <w>42</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>VentanaPropietario
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>800</x>
+      <y>212</y>
+      <w>42</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>VentanaAdministrador
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>914</x>
+      <y>214</y>
+      <w>28</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>840</x>
+      <y>188</y>
+      <w>28</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>914</x>
+      <y>188</y>
+      <w>28</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>888</x>
+      <y>166</y>
+      <w>6</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>796</x>
+      <y>150</y>
+      <w>192</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+</diagram>
